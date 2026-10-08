@@ -12,16 +12,17 @@ This project's purpose is to practice C programming while also applying electric
 
 ## How It Works
 The program works only for four band resistors.
-1. The first band is for the first digit.
-2. The second band is for the second digit.
-3. The third band determines the mutiplier.
-4. The fourth band determines the tolerance.
+1. The first band: first digit.
+2. The second band: second digit.
+3. The third band: mutiplier.
+4. The fourth band: tolerance.
 
 The resistance is calculated by: Resistance = (First two digits) × 10^(Multiplier)
 
 ## Technologies Used
 * C programming
 * GCC compiler
+* C libraries (stdio.h, math.h)
 
 ## How To Compile and Run
 Compile:
@@ -36,6 +37,22 @@ Run:
 * If statements
 * User input
 * Electrical engineering fundamentals
+
+## Test Run
+
+Input:
+First band: 1 (Brown)
+Second band: 0 (Black)
+Third band: 2 (Red)
+Fourth band: 10 (Gold)
+
+Output:
+Resistance: 1000.00 ohms +/- 5.00%
+
+## Limitations
+* Only supports four band resistors.
+* Requires numerical color selections rather than color names.
+* Does not handle non-numeric input safely.
 
 ## Future Enhancements
 * Allow users to calculate for 5 band resistors

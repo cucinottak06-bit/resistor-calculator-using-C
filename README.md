@@ -26,7 +26,7 @@ The resistance is calculated by: Resistance = (First two digits) × 10^(Multipli
 
 ## How To Compile and Run
 Compile:
-gcc resistor.c -o resistor -1m
+gcc resistor.c -o resistor -lm
 
 Run:
 ./resistor
